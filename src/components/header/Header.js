@@ -14,11 +14,11 @@ import {
   resumeSection
 } from "../../portfolio";
 
-function Header() {
-  const {isDark} = useContext(StyleContext);
+const Header = () => {
+  const { theme, setTheme, isChecked } = useContext(StyleContext);
+  const { viewBlogs, viewExperiences, viewSkills, viewEducation, viewProjects, viewPublications } = useContext(StyleContext);
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
-  const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
@@ -26,7 +26,7 @@ function Header() {
 
   return (
     <Headroom>
-      <header className={isDark ? "dark-menu header" : "header"}>
+      <header className={theme ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
@@ -38,9 +38,9 @@ function Header() {
           htmlFor="menu-btn"
           style={{color: "white"}}
         >
-          <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
+          <span className={theme ? "navicon navicon-dark" : "navicon"}></span>
         </label>
-        <ul className={isDark ? "dark-menu menu" : "menu"}>
+        <ul className={theme ? "dark-menu menu" : "menu"}>
           <li>
             <a href="#greeting">Home</a>
           </li>
@@ -79,4 +79,5 @@ function Header() {
     </Headroom>
   );
 }
+
 export default Header;

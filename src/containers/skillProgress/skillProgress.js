@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./Progress.scss";
-import {illustration, techStack} from "../../portfolio";
+import StyleContext from "../../contexts/StyleContext";
 import {Fade} from "react-reveal";
 import AnimationToolbox from "../../assets/lottie/Animation - 1746391184102.json";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
