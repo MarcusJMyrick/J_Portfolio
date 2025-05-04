@@ -1,0 +1,53 @@
+@import "../../_globalColor";
+
+.publication-card {
+  background-color: $background-color-light;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.publication-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.publication-title {
+  color: $text-color;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.publication-journal {
+  color: $accent-color;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.publication-authors {
+  color: $text-color-secondary;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.publication-link {
+  color: $accent-color;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  display: inline-block;
+
+  &:hover {
+    color: $accent-color-light;
+    text-decoration: underline;
+  }
+} 

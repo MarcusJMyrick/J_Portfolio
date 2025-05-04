@@ -1,0 +1,37 @@
+@import "../../_globalColor";
+
+.publications-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.publications-heading {
+  color: $text-color;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.publications-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .publications-heading {
+    font-size: 2em;
+  }
+  
+  .publications-cards-div {
+    grid-template-columns: 1fr;
+  }
+} 

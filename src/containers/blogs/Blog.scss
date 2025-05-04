@@ -1,0 +1,107 @@
+/*Blog Cards Layout*/
+@import "../../_globalColor";
+
+.square {
+  width: 440px;
+  height: 430px;
+  background: $textColorDark;
+  border-radius: 4px;
+  box-shadow: 0px 20px 50px $darkBoxShadow;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+}
+
+.square:hover {
+  box-shadow: 0 20px 40px $lightBoxShadow;
+}
+
+.blog-header-text {
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.blog-subtitle {
+  text-transform: uppercase;
+}
+.blog-main-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.blog-image-div > img {
+  max-width: 100%;
+  height: auto;
+}
+.blog-text-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+  align-items: stretch;
+}
+.subTitle {
+  color: $subTitle;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .blog-header-text {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .blog-header-text {
+    font-size: 30px;
+    text-align: center;
+  }
+  .blog-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 300px) {
+  .blog-text-div {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .blog-text-div {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.blog-header-text {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.blog-subtitle {
+  font-size: 1.1rem;
+  color: $subTitle;
+}
+
+.blog-container {
+  min-height: 260px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Remove extra margin at the bottom of blog cards */
+.blog-main-div > * {
+  margin-bottom: 0;
+}
