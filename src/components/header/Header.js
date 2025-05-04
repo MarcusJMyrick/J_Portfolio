@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <Headroom>
-      <header className={theme ? "dark-menu header" : "header"}>
+      <header className="dark-menu header">
         <a href="/" className="logo">
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
@@ -38,9 +38,9 @@ const Header = () => {
           htmlFor="menu-btn"
           style={{color: "white"}}
         >
-          <span className={theme ? "navicon navicon-dark" : "navicon"}></span>
+          <span className="navicon navicon-dark"></span>
         </label>
-        <ul className={theme ? "dark-menu menu" : "menu"}>
+        <ul className="dark-menu menu">
           <li>
             <a href="#greeting">Home</a>
           </li>
