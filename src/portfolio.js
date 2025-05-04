@@ -96,9 +96,7 @@ const educationInfo = {
         "Honors thesis: Two-Process Sleep Model & Non-24-SWD simulation",
         "Student Harm-Reduction Coalition volunteer"
       ],
-      extraLogos: [
-        require("./assets/images/Student_Harm_Coalition.png")
-      ]
+      extraLogos: [require("./assets/images/Student_Harm_Coalition.png")]
     }
   ]
 };
@@ -168,7 +166,8 @@ const workExperiences = {
     },
     {
       role: "Volunteer – Harm Reduction Initiatives",
-      company: "Student Harm Reduction Coalition (SHRC), University of Pennsylvania",
+      company:
+        "Student Harm Reduction Coalition (SHRC), University of Pennsylvania",
       companylogo: require("./assets/images/Student_Harm_Coalition.png"),
       date: "Aug 2024–Present",
       descBullets: [
@@ -281,7 +280,8 @@ const bigProjects = {
     {
       image: require("./assets/images/sleep_model_preview.png"),
       projectName: "Two-Process Sleep Model (Honors Thesis)",
-      projectDesc: "Simulated circadian (Process C) and homeostatic (Process S) regulation in sleep. Studied disrupted cycles in Non-24 SWD; presented results with visual plots.",
+      projectDesc:
+        "Simulated circadian (Process C) and homeostatic (Process S) regulation in sleep. Studied disrupted cycles in Non-24 SWD; presented results with visual plots.",
       footerLink: [
         {
           name: "View Project",
@@ -292,7 +292,8 @@ const bigProjects = {
     {
       image: require("./assets/images/covid_heatmap.png"),
       projectName: "COVID-19 T-Cell Immune Response",
-      projectDesc: "Part of Nature Portfolio–accepted research using flow cytometry and RNA-Seq data. Created DEGs heatmap visualized via hierarchical clustering.",
+      projectDesc:
+        "Part of Nature Portfolio–accepted research using flow cytometry and RNA-Seq data. Created DEGs heatmap visualized via hierarchical clustering.",
       footerLink: [
         {
           name: "View Project",
@@ -303,7 +304,8 @@ const bigProjects = {
     {
       image: require("./assets/images/gorilla_app_ui.png"),
       projectName: "Gorilla Cognitive Enrichment App",
-      projectDesc: "Developed interactive digital puzzles to enhance gorilla mental stimulation. Tested behavior through ethogram logging and informal education techniques.",
+      projectDesc:
+        "Developed interactive digital puzzles to enhance gorilla mental stimulation. Tested behavior through ethogram logging and informal education techniques.",
       footerLink: [
         {
           name: "View Project",
@@ -387,13 +389,15 @@ const blogSection = {
       url: "https://www.thedp.com/article/2024/09/principled-neutrality-institutional-penn-political-speech",
       title: "We need principled neutrality",
       date: "September 30, 2024",
-      description: "Advocates for universities to remain politically neutral while emphasizing their responsibility to protect vulnerable and marginalized student communities."
+      description:
+        "Advocates for universities to remain politically neutral while emphasizing their responsibility to protect vulnerable and marginalized student communities."
     },
     {
       url: "https://www.thedp.com/article/2023/02/african-history-education-penn-liberal-arts-importance",
       title: "Africa to the world: Why universities need African histories",
       date: "February 5, 2023",
-      description: "Calls for universities to include African and non-Western histories in core curricula to develop globally literate students."
+      description:
+        "Calls for universities to include African and non-Western histories in core curricula to develop globally literate students."
     }
   ],
   display: true
@@ -403,9 +407,7 @@ const blogSection = {
 
 const talkSection = {
   title: "TALKS",
-  subtitle: emoji(
-    "SCIENTIFIC PRESENTATIONS & PUBLIC ENGAGEMENT"
-  ),
+  subtitle: emoji("SCIENTIFIC PRESENTATIONS & PUBLIC ENGAGEMENT"),
   talks: [],
   display: false
 };
@@ -434,7 +436,8 @@ const resumeSection = {
 
 const contactInfo = {
   title: "Contact Me ✉️",
-  subtitle: "Let's connect on opportunities in neuroscience, clinical research, or pre-medical roles advancing brain and behavioral health.",
+  subtitle:
+    "Let's connect on opportunities in neuroscience, clinical research, or pre-medical roles advancing brain and behavioral health.",
   number: "+1 (773) 491-4225",
   email_address: "julunwae@sas.upenn.edu"
 };

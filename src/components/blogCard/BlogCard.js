@@ -25,12 +25,21 @@ export default function BlogCard({blog, isDark}) {
         >
           {blog.date && (
             <div className="blog-date">
-              <span role="img" aria-label="calendar">📅</span> {blog.date}
+              <span role="img" aria-label="calendar">
+                📅
+              </span>{" "}
+              {blog.date}
             </div>
           )}
           <h3 className={isDark ? "small-dark blog-title" : "blog-title"}>
             {blog.title}
-            <span className="blog-link-icon" role="img" aria-label="black woman">🧑🏿‍🦱</span>
+            <span
+              className="blog-link-icon"
+              role="img"
+              aria-label="black woman"
+            >
+              🧑🏿‍🦱
+            </span>
           </h3>
           <p className={isDark ? "small-dark small" : "small"}>
             {blog.description}

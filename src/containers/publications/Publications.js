@@ -16,12 +16,7 @@ const Publications = () => {
             <h1 className="publications-heading">{publications.title}</h1>
             <div className="publications-cards-div">
               {publications.publications.map((publication, i) => {
-                return (
-                  <PublicationCard
-                    key={i}
-                    publication={publication}
-                  />
-                );
+                return <PublicationCard key={i} publication={publication} />;
               })}
             </div>
           </div>
@@ -31,4 +26,4 @@ const Publications = () => {
   );
 };
 
-export default Publications; 
+export default Publications;

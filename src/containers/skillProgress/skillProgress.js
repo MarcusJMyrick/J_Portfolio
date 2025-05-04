@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import "./Progress.scss";
 import {illustration, techStack} from "../../portfolio";
 import {Fade} from "react-reveal";
@@ -21,16 +21,18 @@ export default function StackProgress() {
             {techStack.experience.map((exp, i) => (
               <div
                 key={i}
-                className={`skill skill-collapsible${openIndex === i ? " open" : ""}`}
+                className={`skill skill-collapsible${
+                  openIndex === i ? " open" : ""
+                }`}
                 onClick={() => handleToggle(i)}
                 onMouseEnter={() => setOpenIndex(i)}
                 onMouseLeave={() => setOpenIndex(null)}
-                style={{ cursor: "pointer" }}
+                style={{cursor: "pointer"}}
               >
                 <div className="skill-bar-label">
                   <h3>{exp.Stack}</h3>
                   <div className="meter">
-                    <span style={{ width: exp.progressPercentage }}></span>
+                    <span style={{width: exp.progressPercentage}}></span>
                   </div>
                 </div>
                 <div
@@ -41,10 +43,15 @@ export default function StackProgress() {
                     transition: "max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
                   }}
                 >
-                  <ul style={{ margin: openIndex === i ? "1em 0" : 0, opacity: openIndex === i ? 1 : 0, transition: "opacity 0.3s" }}>
-                    {exp.details && exp.details.map((item, idx) => (
-                      <li key={idx}>{item}</li>
-                    ))}
+                  <ul
+                    style={{
+                      margin: openIndex === i ? "1em 0" : 0,
+                      opacity: openIndex === i ? 1 : 0,
+                      transition: "opacity 0.3s"
+                    }}
+                  >
+                    {exp.details &&
+                      exp.details.map((item, idx) => <li key={idx}>{item}</li>)}
                   </ul>
                 </div>
               </div>

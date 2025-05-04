@@ -26,4 +26,4 @@ const PublicationCard = ({publication}) => {
   );
 };
 
-export default PublicationCard; 
+export default PublicationCard;
