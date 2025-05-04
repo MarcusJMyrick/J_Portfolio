@@ -1,7 +1,6 @@
 import React, {useContext} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
-import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
 import {
   greeting,
@@ -15,7 +14,6 @@ import {
 } from "../../portfolio";
 
 const Header = () => {
-  const { theme, setTheme, isChecked } = useContext(StyleContext);
   const { viewBlogs, viewExperiences, viewSkills, viewEducation, viewProjects, viewPublications } = useContext(StyleContext);
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
@@ -67,12 +65,6 @@ const Header = () => {
           )}
           <li>
             <a href="#contact">Contact</a>
-          </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
           </li>
         </ul>
       </header>

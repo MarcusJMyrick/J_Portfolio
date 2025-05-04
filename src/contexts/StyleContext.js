@@ -1,8 +1,27 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 
-const StyleContext = React.createContext();
+export const StyleContext = createContext();
 
-export const StyleProvider = StyleContext.Provider;
-export const StyleConsumer = StyleContext.Consumer;
+export const StyleProvider = ({ children }) => {
+  const [isChecked, setIsChecked] = useState(true);
+  const [theme, setTheme] = useState(true);
 
-export default StyleContext;
+  return (
+    <StyleContext.Provider
+      value={{
+        isChecked,
+        setIsChecked,
+        theme,
+        setTheme,
+        viewBlogs: true,
+        viewExperiences: true,
+        viewSkills: true,
+        viewEducation: true,
+        viewProjects: true,
+        viewPublications: true
+      }}
+    >
+      {children}
+    </StyleContext.Provider>
+  );
+};

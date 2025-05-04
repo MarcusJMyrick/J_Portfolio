@@ -1,0 +1,48 @@
+:root {
+  --dark-bg: #1a1a1a;
+  --dark-text: #ffffff;
+  --dark-secondary: #2d2d2d;
+  --dark-accent: #4a9eff;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.dark-menu {
+  background-color: var(--dark-secondary);
+  color: var(--dark-text);
+}
+
+.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+/* Ensure all text is visible in dark mode */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode span,
+.dark-mode a {
+  color: var(--dark-text);
+}
+
+/* Ensure links are visible and have hover effect */
+.dark-mode a {
+  color: var(--dark-accent);
+}
+
+.dark-mode a:hover {
+  color: #6fb1ff;
+} 

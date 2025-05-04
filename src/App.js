@@ -1,12 +1,15 @@
 import React from "react";
-import "./App.scss";
-import Main from "./containers/Main";
+import { StyleProvider } from "./contexts/StyleContext";
+import Main from "./components/main/Main";
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <Main />
-    </div>
+    <StyleProvider>
+      <div className="dark">
+        <Main />
+      </div>
+    </StyleProvider>
   );
 }
 
