@@ -6,7 +6,7 @@ import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {greeting} from "../../portfolio";
-import StyleContext from "../../contexts/StyleContext";
+import { StyleContext } from "../../contexts/StyleContext";
 import Animation_skin_corrected from "../../assets/lottie/Animation_skin_corrected.json";
 
 export default function Greeting() {

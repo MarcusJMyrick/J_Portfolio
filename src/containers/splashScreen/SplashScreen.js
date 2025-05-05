@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import "./SplashScreen.css";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import {greeting, splashScreen} from "../../portfolio";
-import StyleContext from "../../contexts/StyleContext";
+import { StyleContext } from "../../contexts/StyleContext";
 
 export default function SplashScreen() {
   const {isDark} = useContext(StyleContext);

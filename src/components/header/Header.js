@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
-import StyleContext from "../../contexts/StyleContext";
+import { StyleContext } from "../../contexts/StyleContext";
 import {
   greeting,
   workExperiences,

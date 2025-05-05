@@ -1,7 +1,7 @@
 import React, {createRef, useContext} from "react";
 import {Fade, Slide} from "react-reveal";
 import "./EducationCard.scss";
-import StyleContext from "../../contexts/StyleContext";
+import { StyleContext } from "../../contexts/StyleContext";
 
 export default function EducationCard({school}) {
   const imgRef = createRef();
