@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleProvider } from "./contexts/StyleContext";
-import Main from "./components/main/Main";
+import Main from "./containers/Main";
 import "./App.css";
 
 function App() {
