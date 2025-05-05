@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <StyleProvider>
-      <div className="dark">
+      <div className="dark-mode">
         <Main />
       </div>
     </StyleProvider>
