@@ -17,6 +17,12 @@
   margin-top: 2rem;
 }
 
+#experience {
+  display: block !important; /* Ensure it's always visible */
+  width: 100%;
+  overflow: visible !important;
+}
+
 .experience-container > * {
   flex: 1;
 }
@@ -33,6 +39,10 @@
   .experience-heading {
     font-size: 30px;
     text-align: center;
+  }
+  #experience {
+    margin: 2rem 0;
+    padding: 1rem 0;
   }
 }
 

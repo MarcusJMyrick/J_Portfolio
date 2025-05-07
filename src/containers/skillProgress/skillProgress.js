@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import "./Progress.scss";
 import { StyleContext } from "../../contexts/StyleContext";
 import {Fade} from "react-reveal";
@@ -8,9 +8,38 @@ import {techStack} from "../../portfolio";
 
 export default function StackProgress() {
   const [openIndex, setOpenIndex] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check if mobile device
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+    };
+  }, []);
 
   const handleToggle = idx => {
-    setOpenIndex(openIndex === idx ? null : idx);
+    if (!isMobile) {
+      setOpenIndex(openIndex === idx ? null : idx);
+    }
+  };
+
+  const handleMouseEnter = idx => {
+    if (!isMobile) {
+      setOpenIndex(idx);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (!isMobile) {
+      setOpenIndex(null);
+    }
   };
 
   if (techStack.viewSkillBars) {
@@ -23,12 +52,12 @@ export default function StackProgress() {
               <div
                 key={i}
                 className={`skill skill-collapsible${
-                  openIndex === i ? " open" : ""
+                  openIndex === i || isMobile ? " open" : ""
                 }`}
                 onClick={() => handleToggle(i)}
-                onMouseEnter={() => setOpenIndex(i)}
-                onMouseLeave={() => setOpenIndex(null)}
-                style={{cursor: "pointer"}}
+                onMouseEnter={() => handleMouseEnter(i)}
+                onMouseLeave={handleMouseLeave}
+                style={{cursor: isMobile ? "default" : "pointer"}}
               >
                 <div className="skill-bar-label">
                   <h3>{exp.Stack}</h3>
@@ -39,15 +68,15 @@ export default function StackProgress() {
                 <div
                   className="skill-details"
                   style={{
-                    maxHeight: openIndex === i ? "500px" : "0",
+                    maxHeight: openIndex === i || isMobile ? "500px" : "0",
                     overflow: "hidden",
                     transition: "max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
                   }}
                 >
                   <ul
                     style={{
-                      margin: openIndex === i ? "1em 0" : 0,
-                      opacity: openIndex === i ? 1 : 0,
+                      margin: openIndex === i || isMobile ? "1em 0" : 0,
+                      opacity: openIndex === i || isMobile ? 1 : 0,
                       transition: "opacity 0.3s"
                     }}
                   >
