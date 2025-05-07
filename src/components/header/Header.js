@@ -64,7 +64,9 @@ const Header = () => {
             </li>
           )}
           <li>
-            <a href="#contact">Contact</a>
+            <a href="/Julu_Nwaezeapu_CV.pdf" download className="resume-button">
+              Download Resume
+            </a>
           </li>
         </ul>
       </header>

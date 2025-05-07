@@ -40,7 +40,7 @@ export default function Greeting() {
               <SocialMedia />
               <div className="button-greeting-div">
                 <a
-                  href="/Nwaezeapu,Julu_CV.pdf"
+                  href="/Julu_Nwaezeapu_CV.pdf"
                   download
                   className="download-link-button"
                 >

@@ -51,7 +51,7 @@ export default function Contact() {
               <br />
               <a
                 className="contact-detail-email"
-                href="/Nwaezeapu,Julu_CV.pdf"
+                href="/Julu_Nwaezeapu_CV.pdf"
                 download
               >
                 Download Resume
