@@ -50,6 +50,18 @@
   background-color: $headerHoverBG;
 }
 
+.resume-button {
+  background-color: $buttonColor !important;
+  border-radius: 4px;
+  margin: 8px 0;
+  transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: $buttonHover !important;
+  transform: translateY(-2px);
+}
+
 .header .logo {
   display: block;
   flex: none;
@@ -113,13 +125,7 @@
 
 .header .menu-icon .navicon-dark:before,
 .header .menu-icon .navicon-dark:after {
-  background: $textColorDark !important;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
+  background: $textColorDark;
 }
 
 .header .menu-icon .navicon:before {
@@ -137,11 +143,11 @@
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 486px;
+  max-height: 240px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent !important;
+  background: transparent;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon:before {

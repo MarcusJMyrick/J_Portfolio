@@ -39,17 +39,14 @@ export default function Greeting() {
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
+                <a
+                  href="/Nwaezeapu,Julu_CV.pdf"
+                  download
+                  className="download-link-button"
+                >
+                  <Button text="Download Resume" />
+                </a>
                 <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
-                  <a
-                    href={greeting.resumeLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="download-link-button"
-                  >
-                    <Button text="See My Resume" />
-                  </a>
-                )}
               </div>
             </div>
           </div>

@@ -281,37 +281,19 @@ const bigProjects = {
       image: require("./assets/images/sleep_model_preview.png"),
       projectName: "Two-Process Sleep Model (Honors Thesis)",
       projectDesc:
-        "Simulated circadian (Process C) and homeostatic (Process S) regulation in sleep. Studied disrupted cycles in Non-24 SWD; presented results with visual plots.",
-      footerLink: [
-        {
-          name: "View Project",
-          url: "https://github.com/julunwae/sleep-model"
-        }
-      ]
+        "Simulated circadian (Process C) and homeostatic (Process S) regulation in sleep. Studied disrupted cycles in Non-24 SWD; presented results with visual plots."
     },
     {
       image: require("./assets/images/covid_heatmap.png"),
       projectName: "COVID-19 T-Cell Immune Response",
       projectDesc:
-        "Part of Nature Portfolio–accepted research using flow cytometry and RNA-Seq data. Created DEGs heatmap visualized via hierarchical clustering.",
-      footerLink: [
-        {
-          name: "View Project",
-          url: "https://github.com/julunwae/covid-tcell"
-        }
-      ]
+        "Part of Nature Portfolio–accepted research using flow cytometry and RNA-Seq data. Created DEGs heatmap visualized via hierarchical clustering."
     },
     {
       image: require("./assets/images/gorilla_app_ui.png"),
       projectName: "Gorilla Cognitive Enrichment App",
       projectDesc:
-        "Developed interactive digital puzzles to enhance gorilla mental stimulation. Tested behavior through ethogram logging and informal education techniques.",
-      footerLink: [
-        {
-          name: "View Project",
-          url: "https://github.com/julunwae/gorilla-app"
-        }
-      ]
+        "Developed interactive digital puzzles to enhance gorilla mental stimulation. Tested behavior through ethogram logging and informal education techniques."
     }
   ],
   display: true
