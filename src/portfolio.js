@@ -460,7 +460,7 @@ const publications = {
       title: "Immune Cell Responses in SARS-CoV-2 Pneumonia",
       journal: "Nature Portfolio (in press, 2024)",
       authors: "Morales-Nebreda L., Nwaezeapu J. et al.",
-      link: "https://doi.org/xxxxxx"
+      link: "https://pubmed.ncbi.nlm.nih.gov/39138384/"
     }
   ]
 };

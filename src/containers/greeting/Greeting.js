@@ -55,11 +55,10 @@ export default function Greeting() {
           </div>
           <div
             className="greeting-image-div"
-            style={{maxWidth: 200, maxHeight: 200}}
           >
             <DisplayLottie
               animationData={Animation_skin_corrected}
-              style={{width: 160, height: 160}}
+              className="greeting-lottie"
             />
           </div>
         </div>

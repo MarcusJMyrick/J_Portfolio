@@ -125,3 +125,20 @@
     width: auto;
   }
 }
+
+/* Responsive Lottie styling */
+.greeting-lottie {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .greeting-image-div {
+    text-align: center;
+  }
+  .greeting-lottie {
+    max-width: 150px;
+  }
+}

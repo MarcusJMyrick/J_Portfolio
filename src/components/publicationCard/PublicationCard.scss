@@ -6,6 +6,8 @@
   padding: 1.5rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem auto;
+  max-width: 400px;
 
   &:hover {
     transform: translateY(-5px);
@@ -49,5 +51,17 @@
   &:hover {
     color: $accent-color-light;
     text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .publication-title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .publication-journal,
+  .publication-authors,
+  .publication-link {
+    text-align: center;
   }
 }
